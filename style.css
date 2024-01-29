@@ -66,12 +66,16 @@ small{
     font-size: 0.889rem;
     pointer-events: none;
 }
-span{
-    pointer-events: none;
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 button{
     outline: none;
-    pointer-events: none;
 }
 .frame{
     display: flex;
@@ -81,9 +85,9 @@ button{
     overflow: hidden;
     border-radius: 42pt;
     border: 2px solid var(--layer);
-    padding: 20px;
+    padding: 15px;
     padding-bottom: 75px;
-    padding-top: 45px;
+    padding-top: 0px;
     flex-direction: column;
     gap: 20px;
     position: relative;
@@ -95,6 +99,7 @@ button{
     flex-direction: column;
     gap: 20px;
     padding-bottom: 20px;
+    padding-top: 45px;
 }
 .contnt::-webkit-scrollbar {
     display: none;
@@ -227,6 +232,25 @@ button{
     transform: translateY(3px);
     border-bottom: 0px solid #343434;
 }
+.blockedRate{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 23px;
+    padding: 12px;
+}
+.block-name{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.block-name p{
+    opacity: 0.7;
+}
+
+
+
 
 @media (max-width:500px) {
     .frame{
