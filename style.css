@@ -36,27 +36,42 @@ body{
 }
 h1{
     font-size: 2.027rem;
+    pointer-events: none;
 }
 h2{
     font-size: 1.802rem;
+    pointer-events: none;
 }
 h3{
     font-size: 1.602rem;
+    pointer-events: none;
 }
 h4{
     font-size: 1.424rem;
+    pointer-events: none;
 }
 h5{
     font-size: 1.266rem;
+    pointer-events: none;
 }
 h6{
     font-size: 1.125rem;
+    pointer-events: none;
 }
 p{
     font-size: 1rem;
+    pointer-events: none;
 }
 small{
     font-size: 0.889rem;
+    pointer-events: none;
+}
+span{
+    pointer-events: none;
+}
+button{
+    outline: none;
+    pointer-events: none;
 }
 .frame{
     display: flex;
