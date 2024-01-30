@@ -119,6 +119,7 @@ button{
 }
 .nav-bar span{
     color: #505050;
+    transition: 0.1s ease;
 }
 .nav-bar span:active{
     color: var(--main);
@@ -249,6 +250,26 @@ button{
 .block-name p{
     opacity: 0.7;
 }
+
+
+
+.exercisePage{
+    display: none;
+}
+.foodPage{
+    display: none;
+}
+.contactPage{
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 
 
