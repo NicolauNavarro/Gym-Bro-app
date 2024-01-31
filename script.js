@@ -63,3 +63,28 @@ function contactPageT(){
     foodIcon.style.color='#505050'
     homeIcon.style.color='#505050'
 }
+
+
+const actionbtns = document.querySelectorAll('.circle')
+
+
+actionbtns.forEach(actionbtn => {
+    interuptor()
+    function interuptor(){
+    actionbtn.addEventListener('click', () => {
+        actionbtn.style.backgroundColor='#404040'
+        active()
+        
+        actionbtn.addEventListener('click', () => {
+            actionbtn.style.backgroundColor='#2020208e'
+            interuptor()
+        });
+    });
+    }
+
+    function active(){
+        let id = actionbtn.id
+    }
+
+
+});
