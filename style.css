@@ -210,14 +210,14 @@ button{
     align-items: center;
     justify-content: center;
 }
-.workout .exercise{
+.exercise{
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 3px solid #343434;
     padding-bottom: 10px;
 }
-.workout .exercise button{
+.exercise button{
     width: 90px;
     height: 40px;
     display: flex;
@@ -230,7 +230,7 @@ button{
     border-bottom: 3px solid #343434;
     transition: 0.1s ease;
 }
-.workout .exercise button:active{
+.exercise button:active{
     transform: translateY(3px);
     border-bottom: 0px solid #343434;
 }
@@ -240,12 +240,12 @@ button{
     flex-direction: row;
     align-items: center;
     padding-right: 23px;
-    padding: 12px;
+    padding: 14px;
 }
 .block-name{
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 2px;
 }
 .block-name p{
     opacity: 0.7;
@@ -263,13 +263,45 @@ button{
     display: none;
 }
 
+.listeditems{
+    padding: 15px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.bar-stadi{
+    display: flex;
+    gap: 7px;
+}
+.with-stdi{
+    border-bottom: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.bar-stadistcs{
+    display: flex;
+    width: 100%;
+}
+.comleated{
+    height: 10px;
+    width: 40%;
+    border-radius: 5px;
+    background-color: var(--main);
+}
 
-
-
-
-
-
-
+.not-compleated{
+    background-color: var(--text-2);
+    width: 100%;
+}
+.dayName .stadnotitle{
+    height: 90px;
+    margin-top: 0px;
+}
+.dayName .stadnotitle .circle{
+    height: 100%;
+}
 
 
 
