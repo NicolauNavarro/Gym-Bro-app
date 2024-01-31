@@ -233,6 +233,7 @@ button{
 .exercise button:active{
     transform: translateY(3px);
     border-bottom: 0px solid #343434;
+    background-color: #404040;
 }
 .blockedRate{
     display: flex;
