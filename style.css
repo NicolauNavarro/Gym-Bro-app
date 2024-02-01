@@ -233,7 +233,7 @@ button{
 .exercise button:active{
     transform: translateY(3px);
     border-bottom: 0px solid #343434;
-    background-color: #404040;
+    background-color: #303030;
 }
 .blockedRate{
     display: flex;
@@ -322,6 +322,26 @@ button{
 .rest-between p{
     opacity: 0.8;
 }
+.labels{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: -15px;
+    transition: 0.15 ease;
+    margin-bottom: -3px;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+.label{
+    background-color: #343434;
+    border-radius: 0px 0px 6px 6px;
+    padding: 8px 12px;
+    display: none;
+}
+
+
+
+
 
 
 

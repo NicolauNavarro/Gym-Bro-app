@@ -67,7 +67,6 @@ function contactPageT(){
 
 const actionbtns = document.querySelectorAll('.circle')
 
-
 actionbtns.forEach(actionbtn => {
     interuptor()
     function interuptor(){
@@ -77,13 +76,104 @@ actionbtns.forEach(actionbtn => {
         
         actionbtn.addEventListener('click', () => {
             actionbtn.style.backgroundColor='#2020208e'
+            desactivate()
             interuptor()
         });
     });
     }
 
     function active(){
-        let id = actionbtn.id
+        let idd = actionbtn.id
+        if(idd == 'fats'){
+            const itemsShow = document.querySelectorAll(`#fatsShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='block'
+            });
+        }
+
+        if(idd == 'carbs'){
+            const itemsShow = document.querySelectorAll(`#carbsShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='block'
+            });
+        }
+
+        if(idd == 'protein'){
+            const itemsShow = document.querySelectorAll(`#proteinShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='block'
+            });
+        }
+
+        if(idd == 'cardio'){
+            const itemsShow = document.querySelectorAll(`#cardioShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='block'
+            });
+        }
+
+        if(idd == 'strenght'){
+            const itemsShow = document.querySelectorAll(`#strenghtShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='block'
+            });
+        }
+
+        if(idd == 'flexibility'){
+            const itemsShow = document.querySelectorAll(`#flexibilityShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='block'
+            });
+        }
+    }
+
+
+
+    function desactivate(){
+        
+        let idd = actionbtn.id
+        if(idd == 'fats'){
+            const itemsShow = document.querySelectorAll(`#fatsShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='none'
+            });
+        }
+
+        if(idd == 'carbs'){
+            const itemsShow = document.querySelectorAll(`#carbsShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='none'
+            });
+        }
+
+        if(idd == 'protein'){
+            const itemsShow = document.querySelectorAll(`#proteinShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='none'
+            });
+        }
+
+        if(idd == 'cardio'){
+            const itemsShow = document.querySelectorAll(`#cardioShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='none'
+            });
+        }
+
+        if(idd == 'strenght'){
+            const itemsShow = document.querySelectorAll(`#strenghtShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='none'
+            });
+        }
+
+        if(idd == 'flexibility'){
+            const itemsShow = document.querySelectorAll(`#flexibilityShow`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='none'
+            });
+        }
+
     }
 
 
