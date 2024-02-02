@@ -109,9 +109,6 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#cardioShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='block'
-                restBetween.forEach(restt => {
-                    restt.style.display='none'
-                });
             });
         }
 
@@ -119,9 +116,6 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#strenghtShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='block'
-                restBetween.forEach(restt => {
-                    restt.style.display='none'
-                });
             });
         }
 
@@ -129,9 +123,6 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#flexibilityShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='block'
-                restBetween.forEach(restt => {
-                    restt.style.display='none'
-                });
             });
         }
 
@@ -196,9 +187,6 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#cardioShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='none'
-                restBetween.forEach(restt => {
-                    restt.style.display='flex'
-                });
             });
         }
 
@@ -206,9 +194,6 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#strenghtShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='none'
-                restBetween.forEach(restt => {
-                    restt.style.display='flex'
-                });
             });
         }
 
@@ -216,9 +201,6 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#flexibilityShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='none'
-                restBetween.forEach(restt => {
-                    restt.style.display='flex'
-                });
             });
         }
 
@@ -226,9 +208,7 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#cardioShowStad`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='none'
-                restBetween.forEach(restt => {
-                    restt.style.display='flex'
-                });
+                appearRest()
             });
         }
 
@@ -236,9 +216,7 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#strenghtShowStad`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='none'
-                restBetween.forEach(restt => {
-                    restt.style.display='flex'
-                });
+                appearRest()
             });
         }
 
@@ -246,13 +224,21 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#flexibilityShowStad`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='none'
-                restBetween.forEach(restt => {
-                    restt.style.display='flex'
-                });
+                appearRest()
             });
         }
 
     }
 
+    const labelStadEx = document.querySelector(`#labelStadEx`)
+
+    function appearRest(){
+        if(labelStadEx.clientHeight == 0){
+            restBetween.forEach(restt => {
+                restt.style.display='flex'
+            });
+        }
+    }
+    
 
 });
