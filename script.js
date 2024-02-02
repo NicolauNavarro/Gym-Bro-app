@@ -109,6 +109,9 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#cardioShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='block'
+                restBetween.forEach(restt => {
+                    restt.style.display='none'
+                });
             });
         }
 
@@ -116,6 +119,9 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#strenghtShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='block'
+                restBetween.forEach(restt => {
+                    restt.style.display='none'
+                });
             });
         }
 
@@ -123,12 +129,45 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#flexibilityShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='block'
+                restBetween.forEach(restt => {
+                    restt.style.display='none'
+                });
+            });
+        }
+
+        if(idd == 'cardioStad'){
+            const itemsShow = document.querySelectorAll(`#cardioShowStad`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='block'
+                restBetween.forEach(restt => {
+                    restt.style.display='none'
+                });
+            });
+        }
+
+        if(idd == 'strenghtStad'){
+            const itemsShow = document.querySelectorAll(`#strenghtShowStad`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='block'
+                restBetween.forEach(restt => {
+                    restt.style.display='none'
+                });
+            });
+        }
+
+        if(idd == 'flexibilityStad'){
+            const itemsShow = document.querySelectorAll(`#flexibilityShowStad`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='block'
+                restBetween.forEach(restt => {
+                    restt.style.display='none'
+                });
             });
         }
     }
 
 
-
+    const restBetween = document.querySelectorAll(`.rest-between`)
     function desactivate(){
         
         let idd = actionbtn.id
@@ -157,6 +196,9 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#cardioShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='none'
+                restBetween.forEach(restt => {
+                    restt.style.display='flex'
+                });
             });
         }
 
@@ -164,6 +206,9 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#strenghtShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='none'
+                restBetween.forEach(restt => {
+                    restt.style.display='flex'
+                });
             });
         }
 
@@ -171,6 +216,39 @@ actionbtns.forEach(actionbtn => {
             const itemsShow = document.querySelectorAll(`#flexibilityShow`)
             itemsShow.forEach(itemShow => {
                 itemShow.style.display='none'
+                restBetween.forEach(restt => {
+                    restt.style.display='flex'
+                });
+            });
+        }
+
+        if(idd == 'cardioStad'){
+            const itemsShow = document.querySelectorAll(`#cardioShowStad`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='none'
+                restBetween.forEach(restt => {
+                    restt.style.display='flex'
+                });
+            });
+        }
+
+        if(idd == 'strenghtStad'){
+            const itemsShow = document.querySelectorAll(`#strenghtShowStad`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='none'
+                restBetween.forEach(restt => {
+                    restt.style.display='flex'
+                });
+            });
+        }
+
+        if(idd == 'flexibilityStad'){
+            const itemsShow = document.querySelectorAll(`#flexibilityShowStad`)
+            itemsShow.forEach(itemShow => {
+                itemShow.style.display='none'
+                restBetween.forEach(restt => {
+                    restt.style.display='flex'
+                });
             });
         }
 
