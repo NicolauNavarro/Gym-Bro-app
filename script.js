@@ -20,6 +20,7 @@ exerciseIcon.addEventListener('click', exercisePageT)
 foodIcon.addEventListener('click', foodPageT)
 contactIcon.addEventListener('click', contactPageT)
 
+
 function homePageT(){
     homePage.style.display='flex'
     exercisePage.style.display='none'
@@ -65,8 +66,10 @@ function contactPageT(){
 }
 
 
+//Swichers for quick data viewing
 const actionbtns = document.querySelectorAll('.circle')
 
+//Function for each swich
 actionbtns.forEach(actionbtn => {
     interuptor()
     function interuptor(){
@@ -82,6 +85,7 @@ actionbtns.forEach(actionbtn => {
     });
     }
 
+    //Activated swich properties
     function active(){
         let idd = actionbtn.id
         if(idd == 'fats'){
@@ -159,6 +163,7 @@ actionbtns.forEach(actionbtn => {
 
 
     const restBetween = document.querySelectorAll(`.rest-between`)
+    //Desactivated swiches properties
     function desactivate(){
         
         let idd = actionbtn.id
@@ -231,7 +236,6 @@ actionbtns.forEach(actionbtn => {
     }
 
     const labelStadEx = document.querySelector(`#labelStadEx`)
-
     function appearRest(){
         if(labelStadEx.clientHeight == 0){
             restBetween.forEach(restt => {
@@ -239,6 +243,22 @@ actionbtns.forEach(actionbtn => {
             });
         }
     }
-    
-
 });
+
+
+/*
+//Chat appear and desapear input and top by scrolling
+//--------------------------------------------------//
+
+//Get both elements
+const inputMessage = document.querySelector('.sendInput')
+const contactPageTop = document.querySelector('#contactPageTop')
+
+//Event listener
+contactPage.addEventListener('scroll', scrollOnChat)
+
+//Function
+function scrollOnChat(){
+    
+}
+*/
