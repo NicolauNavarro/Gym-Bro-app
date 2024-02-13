@@ -246,6 +246,29 @@ actionbtns.forEach(actionbtn => {
 });
 
 
+
+
+const ex1 = document.querySelector('#ex1')
+const exerciseSubPage = document.querySelector('.exerciseSubPage')
+
+ex1.addEventListener('click', apearExerciseSub)
+
+function apearExerciseSub(){
+    exerciseSubPage.style.display='flex';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 //Chat appear and desapear input and top by scrolling
 //--------------------------------------------------//
