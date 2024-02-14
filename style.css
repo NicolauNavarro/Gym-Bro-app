@@ -351,11 +351,10 @@ button{
     gap: 20px;
     background-color: var(--background);
     z-index: 1;
-    position: relative;
-    min-height: calc(100% - 75px);
     display: flex;
     flex-direction: column;
     gap: 7px;
+    padding-bottom: 100px;
 }
 .messageblock{
     width: 100%;
@@ -397,20 +396,32 @@ button{
 }
 
 
-.sendInput{
-    width: calc(100% - 20px);
-    background-color: var(--layer);
-    min-height: 55px;
+
+.inputbackgroundbox{
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--background);
+    z-index: 6;
+    position: sticky;
+    bottom: -20px;
+    margin-bottom: -20px;
+    padding-bottom: 5px;
+}
+
+.inputbackgroundbox .sendInput{
+    width: 100%;
+    background-color: #1f1f1f;
+    height: 55px;
     padding: 7px 12px;
     display: flex;
     align-items: center;
     border-radius: 10px;
-    z-index: 6;
-    margin-left: 10px;
-    position: sticky;
-    bottom: 0px;
 }
-.sendInput textarea{
+.inputbackgroundbox .sendInput textarea{
     width: calc(100% - 30px);
     background: none;
     border: none;
