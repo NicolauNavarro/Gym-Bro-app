@@ -354,7 +354,7 @@ button{
     display: flex;
     flex-direction: column;
     gap: 7px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 .messageblock{
     width: 100%;
